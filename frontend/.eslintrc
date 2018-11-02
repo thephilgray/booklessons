@@ -2,9 +2,10 @@
   "env": {
     "browser": true,
     "es6": true,
-    "commonjs": true
+    "commonjs": true,
+    "cypress/globals": true
   },
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "plugin:cypress/recommended"],
   "parserOptions": {
     "ecmaVersion": 9,
     "sourceType": "module",
@@ -12,7 +13,7 @@
       "jsx": true
     }
   },
-  "plugins": ["react"],
+  "plugins": ["react", "cypress"],
   "rules": {
     "react/prop-types": 0,
     "react/jsx-uses-vars": [2]
